@@ -16,6 +16,14 @@
 		C3C287F613B9CF7500CDEECB /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3C287F413B9CF7500CDEECB /* MainWindow.xib */; };
 		C3C287F913B9CF7500CDEECB /* DailyDealTileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C287F813B9CF7500CDEECB /* DailyDealTileViewController.m */; };
 		C3C287FC13B9CF7500CDEECB /* DailyDealTileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3C287FA13B9CF7500CDEECB /* DailyDealTileViewController.xib */; };
+		C3C2880E13B9D63600CDEECB /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C2880813B9D63600CDEECB /* UIImage+Resize.m */; };
+		C3C2880F13B9D63600CDEECB /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C2880913B9D63600CDEECB /* UIImage+Alpha.m */; };
+		C3C2881013B9D63600CDEECB /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C2880A13B9D63600CDEECB /* UIImage+RoundedCorner.m */; };
+		C3C2881413B9E39F00CDEECB /* TileView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C2881313B9E39F00CDEECB /* TileView.m */; };
+		C3C2883513BA097200CDEECB /* ScoresViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C2883313BA097100CDEECB /* ScoresViewCtrl.m */; };
+		C3C2883613BA097200CDEECB /* ScoresViewCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3C2883413BA097200CDEECB /* ScoresViewCtrl.xib */; };
+		C3C2884913BA1E2800CDEECB /* ScoresObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C2884813BA1E2700CDEECB /* ScoresObject.m */; };
+		C3C2885A13BA240F00CDEECB /* Scores.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C2885913BA240E00CDEECB /* Scores.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +31,31 @@
 		C3C287E213B9CF7500CDEECB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C3C287E413B9CF7500CDEECB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C3C287E613B9CF7500CDEECB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C3C287EA13B9CF7500CDEECB /* DailyDealTile-Info.plist */ = {isa = PBXFileReference; path = "DailyDealTile-Info.plist"; sourceTree = "<group>"; };
+		C3C287EA13B9CF7500CDEECB /* DailyDealTile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DailyDealTile-Info.plist"; sourceTree = "<group>"; };
 		C3C287EC13B9CF7500CDEECB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C3C287EE13B9CF7500CDEECB /* DailyDealTile-Prefix.pch */ = {isa = PBXFileReference; path = "DailyDealTile-Prefix.pch"; sourceTree = "<group>"; };
+		C3C287EE13B9CF7500CDEECB /* DailyDealTile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DailyDealTile-Prefix.pch"; sourceTree = "<group>"; };
 		C3C287EF13B9CF7500CDEECB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C3C287F113B9CF7500CDEECB /* DailyDealTileAppDelegate.h */ = {isa = PBXFileReference; path = DailyDealTileAppDelegate.h; sourceTree = "<group>"; };
+		C3C287F113B9CF7500CDEECB /* DailyDealTileAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DailyDealTileAppDelegate.h; sourceTree = "<group>"; };
 		C3C287F213B9CF7500CDEECB /* DailyDealTileAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DailyDealTileAppDelegate.m; sourceTree = "<group>"; };
 		C3C287F513B9CF7500CDEECB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		C3C287F713B9CF7500CDEECB /* DailyDealTileViewController.h */ = {isa = PBXFileReference; path = DailyDealTileViewController.h; sourceTree = "<group>"; };
+		C3C287F713B9CF7500CDEECB /* DailyDealTileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DailyDealTileViewController.h; sourceTree = "<group>"; };
 		C3C287F813B9CF7500CDEECB /* DailyDealTileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DailyDealTileViewController.m; sourceTree = "<group>"; };
 		C3C287FB13B9CF7500CDEECB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DailyDealTileViewController.xib; sourceTree = "<group>"; };
+		C3C2880813B9D63600CDEECB /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		C3C2880913B9D63600CDEECB /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		C3C2880A13B9D63600CDEECB /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		C3C2880B13B9D63600CDEECB /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		C3C2880C13B9D63600CDEECB /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		C3C2880D13B9D63600CDEECB /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		C3C2881213B9E39F00CDEECB /* TileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileView.h; sourceTree = "<group>"; };
+		C3C2881313B9E39F00CDEECB /* TileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileView.m; sourceTree = "<group>"; };
+		C3C2883213BA097100CDEECB /* ScoresViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoresViewCtrl.h; sourceTree = "<group>"; };
+		C3C2883313BA097100CDEECB /* ScoresViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoresViewCtrl.m; sourceTree = "<group>"; };
+		C3C2883413BA097200CDEECB /* ScoresViewCtrl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScoresViewCtrl.xib; sourceTree = "<group>"; };
+		C3C2884713BA1E2700CDEECB /* ScoresObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoresObject.h; sourceTree = "<group>"; };
+		C3C2884813BA1E2700CDEECB /* ScoresObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoresObject.m; sourceTree = "<group>"; };
+		C3C2885813BA240E00CDEECB /* Scores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scores.h; sourceTree = "<group>"; };
+		C3C2885913BA240E00CDEECB /* Scores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scores.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +102,23 @@
 		C3C287E813B9CF7500CDEECB /* DailyDealTile */ = {
 			isa = PBXGroup;
 			children = (
+				C3C287E913B9CF7500CDEECB /* Supporting Files */,
+				C3C2881113B9D63900CDEECB /* UIImage+Resize */,
 				C3C287F113B9CF7500CDEECB /* DailyDealTileAppDelegate.h */,
 				C3C287F213B9CF7500CDEECB /* DailyDealTileAppDelegate.m */,
-				C3C287F413B9CF7500CDEECB /* MainWindow.xib */,
+				C3C2881213B9E39F00CDEECB /* TileView.h */,
+				C3C2881313B9E39F00CDEECB /* TileView.m */,
 				C3C287F713B9CF7500CDEECB /* DailyDealTileViewController.h */,
 				C3C287F813B9CF7500CDEECB /* DailyDealTileViewController.m */,
+				C3C2883213BA097100CDEECB /* ScoresViewCtrl.h */,
+				C3C2883313BA097100CDEECB /* ScoresViewCtrl.m */,
+				C3C2884713BA1E2700CDEECB /* ScoresObject.h */,
+				C3C2884813BA1E2700CDEECB /* ScoresObject.m */,
+				C3C2885813BA240E00CDEECB /* Scores.h */,
+				C3C2885913BA240E00CDEECB /* Scores.m */,
+				C3C287F413B9CF7500CDEECB /* MainWindow.xib */,
 				C3C287FA13B9CF7500CDEECB /* DailyDealTileViewController.xib */,
-				C3C287E913B9CF7500CDEECB /* Supporting Files */,
+				C3C2883413BA097200CDEECB /* ScoresViewCtrl.xib */,
 			);
 			path = DailyDealTile;
 			sourceTree = "<group>";
@@ -99,6 +132,19 @@
 				C3C287EF13B9CF7500CDEECB /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3C2881113B9D63900CDEECB /* UIImage+Resize */ = {
+			isa = PBXGroup;
+			children = (
+				C3C2880813B9D63600CDEECB /* UIImage+Resize.m */,
+				C3C2880913B9D63600CDEECB /* UIImage+Alpha.m */,
+				C3C2880A13B9D63600CDEECB /* UIImage+RoundedCorner.m */,
+				C3C2880B13B9D63600CDEECB /* UIImage+RoundedCorner.h */,
+				C3C2880C13B9D63600CDEECB /* UIImage+Resize.h */,
+				C3C2880D13B9D63600CDEECB /* UIImage+Alpha.h */,
+			);
+			name = "UIImage+Resize";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +200,7 @@
 				C3C287ED13B9CF7500CDEECB /* InfoPlist.strings in Resources */,
 				C3C287F613B9CF7500CDEECB /* MainWindow.xib in Resources */,
 				C3C287FC13B9CF7500CDEECB /* DailyDealTileViewController.xib in Resources */,
+				C3C2883613BA097200CDEECB /* ScoresViewCtrl.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +214,13 @@
 				C3C287F013B9CF7500CDEECB /* main.m in Sources */,
 				C3C287F313B9CF7500CDEECB /* DailyDealTileAppDelegate.m in Sources */,
 				C3C287F913B9CF7500CDEECB /* DailyDealTileViewController.m in Sources */,
+				C3C2880E13B9D63600CDEECB /* UIImage+Resize.m in Sources */,
+				C3C2880F13B9D63600CDEECB /* UIImage+Alpha.m in Sources */,
+				C3C2881013B9D63600CDEECB /* UIImage+RoundedCorner.m in Sources */,
+				C3C2881413B9E39F00CDEECB /* TileView.m in Sources */,
+				C3C2883513BA097200CDEECB /* ScoresViewCtrl.m in Sources */,
+				C3C2884913BA1E2800CDEECB /* ScoresObject.m in Sources */,
+				C3C2885A13BA240F00CDEECB /* Scores.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
