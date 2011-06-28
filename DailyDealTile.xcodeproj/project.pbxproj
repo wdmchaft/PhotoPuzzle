@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3C287E313B9CF7500CDEECB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C287E213B9CF7500CDEECB /* UIKit.framework */; };
+		C3C287E513B9CF7500CDEECB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C287E413B9CF7500CDEECB /* Foundation.framework */; };
+		C3C287E713B9CF7500CDEECB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C287E613B9CF7500CDEECB /* CoreGraphics.framework */; };
+		C3C287ED13B9CF7500CDEECB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3C287EB13B9CF7500CDEECB /* InfoPlist.strings */; };
+		C3C287F013B9CF7500CDEECB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C287EF13B9CF7500CDEECB /* main.m */; };
+		C3C287F313B9CF7500CDEECB /* DailyDealTileAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C287F213B9CF7500CDEECB /* DailyDealTileAppDelegate.m */; };
+		C3C287F613B9CF7500CDEECB /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3C287F413B9CF7500CDEECB /* MainWindow.xib */; };
+		C3C287F913B9CF7500CDEECB /* DailyDealTileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C287F813B9CF7500CDEECB /* DailyDealTileViewController.m */; };
+		C3C287FC13B9CF7500CDEECB /* DailyDealTileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3C287FA13B9CF7500CDEECB /* DailyDealTileViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C3C287DE13B9CF7500CDEECB /* DailyDealTile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyDealTile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3C287E213B9CF7500CDEECB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C3C287E413B9CF7500CDEECB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C3C287E613B9CF7500CDEECB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C3C287EA13B9CF7500CDEECB /* DailyDealTile-Info.plist */ = {isa = PBXFileReference; path = "DailyDealTile-Info.plist"; sourceTree = "<group>"; };
+		C3C287EC13B9CF7500CDEECB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3C287EE13B9CF7500CDEECB /* DailyDealTile-Prefix.pch */ = {isa = PBXFileReference; path = "DailyDealTile-Prefix.pch"; sourceTree = "<group>"; };
+		C3C287EF13B9CF7500CDEECB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3C287F113B9CF7500CDEECB /* DailyDealTileAppDelegate.h */ = {isa = PBXFileReference; path = DailyDealTileAppDelegate.h; sourceTree = "<group>"; };
+		C3C287F213B9CF7500CDEECB /* DailyDealTileAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DailyDealTileAppDelegate.m; sourceTree = "<group>"; };
+		C3C287F513B9CF7500CDEECB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		C3C287F713B9CF7500CDEECB /* DailyDealTileViewController.h */ = {isa = PBXFileReference; path = DailyDealTileViewController.h; sourceTree = "<group>"; };
+		C3C287F813B9CF7500CDEECB /* DailyDealTileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DailyDealTileViewController.m; sourceTree = "<group>"; };
+		C3C287FB13B9CF7500CDEECB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DailyDealTileViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3C287DB13B9CF7500CDEECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C287E313B9CF7500CDEECB /* UIKit.framework in Frameworks */,
+				C3C287E513B9CF7500CDEECB /* Foundation.framework in Frameworks */,
+				C3C287E713B9CF7500CDEECB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3C287D313B9CF7500CDEECB = {
+			isa = PBXGroup;
+			children = (
+				C3C287E813B9CF7500CDEECB /* DailyDealTile */,
+				C3C287E113B9CF7500CDEECB /* Frameworks */,
+				C3C287DF13B9CF7500CDEECB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3C287DF13B9CF7500CDEECB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3C287DE13B9CF7500CDEECB /* DailyDealTile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3C287E113B9CF7500CDEECB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3C287E213B9CF7500CDEECB /* UIKit.framework */,
+				C3C287E413B9CF7500CDEECB /* Foundation.framework */,
+				C3C287E613B9CF7500CDEECB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3C287E813B9CF7500CDEECB /* DailyDealTile */ = {
+			isa = PBXGroup;
+			children = (
+				C3C287F113B9CF7500CDEECB /* DailyDealTileAppDelegate.h */,
+				C3C287F213B9CF7500CDEECB /* DailyDealTileAppDelegate.m */,
+				C3C287F413B9CF7500CDEECB /* MainWindow.xib */,
+				C3C287F713B9CF7500CDEECB /* DailyDealTileViewController.h */,
+				C3C287F813B9CF7500CDEECB /* DailyDealTileViewController.m */,
+				C3C287FA13B9CF7500CDEECB /* DailyDealTileViewController.xib */,
+				C3C287E913B9CF7500CDEECB /* Supporting Files */,
+			);
+			path = DailyDealTile;
+			sourceTree = "<group>";
+		};
+		C3C287E913B9CF7500CDEECB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3C287EA13B9CF7500CDEECB /* DailyDealTile-Info.plist */,
+				C3C287EB13B9CF7500CDEECB /* InfoPlist.strings */,
+				C3C287EE13B9CF7500CDEECB /* DailyDealTile-Prefix.pch */,
+				C3C287EF13B9CF7500CDEECB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3C287DD13B9CF7500CDEECB /* DailyDealTile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3C287FF13B9CF7500CDEECB /* Build configuration list for PBXNativeTarget "DailyDealTile" */;
+			buildPhases = (
+				C3C287DA13B9CF7500CDEECB /* Sources */,
+				C3C287DB13B9CF7500CDEECB /* Frameworks */,
+				C3C287DC13B9CF7500CDEECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailyDealTile;
+			productName = DailyDealTile;
+			productReference = C3C287DE13B9CF7500CDEECB /* DailyDealTile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3C287D513B9CF7500CDEECB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "HTW Berlin";
+			};
+			buildConfigurationList = C3C287D813B9CF7500CDEECB /* Build configuration list for PBXProject "DailyDealTile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C3C287D313B9CF7500CDEECB;
+			productRefGroup = C3C287DF13B9CF7500CDEECB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3C287DD13B9CF7500CDEECB /* DailyDealTile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3C287DC13B9CF7500CDEECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C287ED13B9CF7500CDEECB /* InfoPlist.strings in Resources */,
+				C3C287F613B9CF7500CDEECB /* MainWindow.xib in Resources */,
+				C3C287FC13B9CF7500CDEECB /* DailyDealTileViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3C287DA13B9CF7500CDEECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C287F013B9CF7500CDEECB /* main.m in Sources */,
+				C3C287F313B9CF7500CDEECB /* DailyDealTileAppDelegate.m in Sources */,
+				C3C287F913B9CF7500CDEECB /* DailyDealTileViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C3C287EB13B9CF7500CDEECB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3C287EC13B9CF7500CDEECB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C3C287F413B9CF7500CDEECB /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3C287F513B9CF7500CDEECB /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		C3C287FA13B9CF7500CDEECB /* DailyDealTileViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3C287FB13B9CF7500CDEECB /* en */,
+			);
+			name = DailyDealTileViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3C287FD13B9CF7500CDEECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C3C287FE13B9CF7500CDEECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		C3C2880013B9CF7500CDEECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DailyDealTile/DailyDealTile-Prefix.pch";
+				INFOPLIST_FILE = "DailyDealTile/DailyDealTile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C3C2880113B9CF7500CDEECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DailyDealTile/DailyDealTile-Prefix.pch";
+				INFOPLIST_FILE = "DailyDealTile/DailyDealTile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3C287D813B9CF7500CDEECB /* Build configuration list for PBXProject "DailyDealTile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3C287FD13B9CF7500CDEECB /* Debug */,
+				C3C287FE13B9CF7500CDEECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3C287FF13B9CF7500CDEECB /* Build configuration list for PBXNativeTarget "DailyDealTile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3C2880013B9CF7500CDEECB /* Debug */,
+				C3C2880113B9CF7500CDEECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3C287D513B9CF7500CDEECB /* Project object */;
+}
