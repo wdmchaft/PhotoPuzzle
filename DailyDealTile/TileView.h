@@ -3,7 +3,7 @@
 //  DailyDealTile
 //
 //  Created by Sebastian Muggelberg on 28.06.11.
-//  Copyright 2011 HTW Berlin. All rights reserved.
+//  Copyright 2011  Berlin. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -38,11 +38,7 @@
 @property (nonatomic, assign) int blackPos;
 @property (nonatomic, assign) int curGamePos;
 @property (nonatomic, assign) int correctTilePos;
-
 @property (nonatomic, assign) id<TileViewDelegate> delegate;
-
-
-
 
 - (id)initWithFrame:(CGRect)frame andImg:(UIImage*)img;
 - (void) setupImgView;

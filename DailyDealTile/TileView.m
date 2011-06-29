@@ -3,7 +3,7 @@
 //  DailyDealTile
 //
 //  Created by Sebastian Muggelberg on 28.06.11.
-//  Copyright 2011 HTW Berlin. All rights reserved.
+//  Copyright 2011  Berlin. All rights reserved.
 //
 
 #import "TileView.h"
@@ -27,6 +27,7 @@ correctTilePos;
 {
     self.tapRecognizer = nil;
     self.tileImg = nil;
+    self.delegate = nil; //not sure if this is correct, need to check this
     [super dealloc];
 }
 
@@ -98,7 +99,8 @@ correctTilePos;
     
     if (xMove != 0.0f || yMove != 0.0f)
     {
-        [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut 
+        
+        [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut 
                          animations:^{
                              self.frame = CGRectMake(self.frame.origin.x +xMove , self.frame.origin.y + yMove, self.frame.size.width, self.frame.size.height);
                              
@@ -114,14 +116,15 @@ correctTilePos;
 #pragma mark -
 #pragma mark GamePlay
 
+// call the delegate and inform via Ctrl all other tiles that blackPos has changed
 - (void) blackPosChanged:(int)pos 
 {
     [delegate tilePosChanged:pos];
 }
 
-- (void) checkGamePosition {
-    
-    
+// compare your pos with the blackpos and calculat if moving is posible
+- (void) checkGamePosition 
+{
     canMoveUp = NO;
     canMoveDown = NO;
     canMoveLeft = NO;

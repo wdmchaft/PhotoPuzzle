@@ -3,7 +3,7 @@
 //  DailyDealTile
 //
 //  Created by Sebastian Muggelberg on 28.06.11.
-//  Copyright 2011 HTW Berlin. All rights reserved.
+//  Copyright 2011  Berlin. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -21,16 +21,14 @@
     IBOutlet UILabel *countLabel;
     IBOutlet UITextField *scoresTextField;
     IBOutlet UIView *scoresView;
-    
     IBOutlet UIToolbar *camToolBar;
     
     NSMutableArray *tilesArray;
-    
-    int blackPos;
-    
     UIImage *puzzleImg;
-    int curScores;
     
+    int curScores;
+    int blackPos;
+
     Scores *scores;
 }
 
@@ -41,9 +39,8 @@
 @property (nonatomic, retain) IBOutlet UILabel *countLabel;
 @property (nonatomic, retain) IBOutlet UITextField *scoresTextField;
 @property (nonatomic, retain) IBOutlet UIView *scoresView;
-@property (nonatomic, retain) Scores *scores;
-
 @property (nonatomic, retain) IBOutlet UIToolbar *camToolBar;
+@property (nonatomic, retain) Scores *scores;
 @property (nonatomic, retain) NSMutableArray *tilesArray;
 @property (nonatomic, retain) UIImage *puzzleImg;
 

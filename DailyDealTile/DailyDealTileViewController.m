@@ -3,7 +3,7 @@
 //  DailyDealTile
 //
 //  Created by Sebastian Muggelberg on 28.06.11.
-//  Copyright 2011 HTW Berlin. All rights reserved.
+//  Copyright 2011  Berlin. All rights reserved.
 //
 
 #import "DailyDealTileViewController.h"
@@ -71,11 +71,22 @@ scores;
     [super viewDidLoad];
     
     tilesArray = [[NSMutableArray alloc] init];
+    
+    //notification to dismiss the modalView of scoresCtrl
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifMethod:) name:@"dissmissModalView" object:nil];    
     [self setupArchiver];
 }
 
 
+
+- (void) notifMethod:(NSNotification*)aNotification 
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+#pragma mark
+#pragma mark NSArchiver
+// to store the scores we use an archiver
 - (void) setupArchiver
 {
     self.scores = nil;
@@ -85,10 +96,24 @@ scores;
         scores = [[Scores alloc] init];
     }
 }
-
-- (void) notifMethod:(NSNotification*)aNotification 
+- (void) saveScore 
 {
-    [self dismissModalViewControllerAnimated:YES];
+    ScoresObject *scoresObject = [[ScoresObject alloc] init];
+    scoresObject.scoresString = [NSString stringWithFormat:@"%i",curScores];
+    scoresObject.nameString = scoresTextField.text;
+    [scores addScores:scoresObject];
+    [scoresObject release];
+    
+    [NSKeyedArchiver archiveRootObject:scores toFile:[self pathForFile:@"scores.archive"]];
+}
+
+- (NSString*) pathForFile:(NSString*)fileName 
+{
+    NSArray *deviceTxtDocumentsDirectory=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *deviceDirectory=[deviceTxtDocumentsDirectory objectAtIndex:0];
+    NSString *path =[deviceDirectory stringByAppendingPathComponent:fileName];
+    
+    return path;
 }
 
 #pragma mark -
@@ -96,7 +121,7 @@ scores;
 
 - (void) tilingImage:(UIImage*)img 
 {
-    //if array exists with elements removeAll
+    //if array exists with elements, removeAll
     if ([tilesArray count] > 0)
     {
         [tilesArray removeAllObjects];
@@ -114,8 +139,8 @@ scores;
             TileView *tileView = [[TileView alloc] initWithFrame:CGRectMake(10,58, 100.0f, 100.0f) andImg:tileImg];
             tileView.correctTilePos = y*3+x;
             
-            //[tilesArray addObject:tileImg];
             [tilesArray addObject:tileView];
+            [tileView release];
         }
     }
     
@@ -144,7 +169,6 @@ scores;
         //positioning of the tiles
         for (int i = 0; i < count; i++)
         {
-            //TileView *tileView = [[TileView alloc] initWithFrame:CGRectMake(10+((i%3)*100.0f),58+(((int)(i/3))*100.0f), 100.0f, 100.0f) andImg:[tilesArray objectAtIndex:i]];
             TileView *tileView = [tilesArray objectAtIndex:i];
             tileView.frame = CGRectMake(10+((i%3)*100.0f),58+(((int)(i/3))*100.0f), 100.0f, 100.0f);
             tileView.tag = 100+i;
@@ -152,7 +176,6 @@ scores;
             tileView.delegate = self;
             tileView.curGamePos = i;
             [self.view addSubview:tileView];
-            [tileView release];
         }
     }
 }
@@ -264,26 +287,7 @@ scores;
     return YES;
 }
 
-- (void) saveScore 
-{
-    //normaly this would not be saved in the user defaults but for this test it is fast and works
-    ScoresObject *scoresObject = [[ScoresObject alloc] init];
-    scoresObject.scoresString = [NSString stringWithFormat:@"%i",curScores];
-    scoresObject.nameString = scoresTextField.text;
-    [scores addScores:scoresObject];
-    [scoresObject release];
-    
-    [NSKeyedArchiver archiveRootObject:scores toFile:[self pathForFile:@"scores.archive"]];
-}
 
-- (NSString*) pathForFile:(NSString*)fileName 
-{
-    NSArray *deviceTxtDocumentsDirectory=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *deviceDirectory=[deviceTxtDocumentsDirectory objectAtIndex:0];
-    NSString *path =[deviceDirectory stringByAppendingPathComponent:fileName];
-    
-    return path;
-}
 
 #pragma mark -
 #pragma mark Actions
